@@ -7,6 +7,7 @@ import java.util.List;
  * Rectangle contains properties of circle and it calculates the area,
  * perimeter, and checks if some point is enclosed by Rectangle.
  * 
+ * Added new comment
  * @author Arjita
  *
  */
@@ -73,6 +74,8 @@ public class Rectangle implements Shape {
 		return false;
 	}
 
+public void sampleFunc() {
+// Blank
 	@Override
 	public double getDistance() {
 		double dist = point.getxCoordinate() * point.getxCoordinate()
