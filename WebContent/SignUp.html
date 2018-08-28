@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<script src="script.js"></script>
+<link href="style.css" rel=stylesheet>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="navbar">
+			<table width="75%" align="center">
+			<tbody>
+				<tr>
+					<td width="45%"><img src="logo.png" height="60%"></td>
+					<td align="right">
+						<a href="Question1.html"> Home </a> &nbsp; 
+						<a	href="#"> About </a> &nbsp; 
+						<a href="#"> Product </a> &nbsp; 
+						<a	href="#"> Gallery </a> &nbsp; 
+						<a href="Question2.html">Contact Us</a> &nbsp;
+						<a href="Login.html">Login</a> &nbsp;
+						<a href="SignUp.html">New User?</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		<hr/>
+		<div id="form" align="center" padding = 5px>
+			<form action="#" id="form" onsubmit="return checkValidation()" method="post">
+				<table cellpadding="5%">
+					<tr>
+						<th align="left">First Name</th>
+						<td><input type='text' name='fname' id='fname' onfocusout="fnamefocusout()"/></td>
+						<td><span id="fnamespan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Last Name</th>
+						<td><input type='text' name='lname' id='lname' onfocusout="lnamefocusout()"/></td>
+						<td><span id="lnamespan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Email</th>
+						<td><input type='text' name='email' id='email' onfocusout="emailfocusout()"/></td>
+						<td><span id="emailspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Password</th>
+						<td><input type='password' name='pwd' id='pwd' onfocusout="passwordfocusout()"/></td>
+						<td><span id="pwdspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Confirm Password</th>
+						<td><input type='password' name='cpwd' id='cpwd' onfocusout="cpasswordfocusout()"/></td>
+						<td><span id="cpwdspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Contact Number</th>
+						<td><input type='text' name='cnumber' id='cnumber' onfocusout="contactnofocusout()"/></td>
+						<td><span id="cnumspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Organization Name</th>
+						<td><select name='orgname' id='orgname'>
+								<option value="metacube">Metacube</option>
+								<option value="tcs">TCS</option>
+								<option value="accenture">Accenture</option>
+								<option value="ibm">IBM</option>
+								<option value="wipro">Wipro</option>
+						</select></td>
+					</tr>
+					
+				</table>
+				<table cellpadding="10%">
+					<tr>
+						<td><button onclick="return checkValidation()">Submit</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
