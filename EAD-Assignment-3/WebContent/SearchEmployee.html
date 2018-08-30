@@ -3,6 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Search Employee</title>
+<link href="style.css" rel=stylesheet>
 </head>
 <body>
 	<div id="wrapper">
@@ -16,8 +17,18 @@
 		</div>
 		<div id="body">
 			<form action="SearchEmployeeServlet" name="form1">
-				<input type= "text" id=""
-				<input type="submit" id="submitButton" value="Search Employee">
+				<table>
+					<tr>
+						<th align="left">Name</th>
+						<td><input type='text' name='name' id='name' /></td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td><input type="submit" id="submitButton"
+							value="Search Employees"></td>
+					</tr>
+				</table>
 			</form>
 		</div>
 	</div>

@@ -1,0 +1,52 @@
+table{
+	width:70%;
+	border:1px solid black;
+	cellpadding:10px;
+} 
+td,th{
+	float: center;
+	padding:10px;
+}
+input , select{
+	width: 100%;
+   	padding: 5px;
+   	box-sizing: border-box;
+   	border-radius: 5px;
+   	font-family: inherit;
+	font-size:100%;
+	box-shadow: 2px 1px #888888;
+}
+form{
+	border:solid black;
+	border-radius: 10px;
+	width : 30%;
+	float: center;
+	padding:10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	background-color:#E0E0E0;
+	padding:10px;
+	border-radius:5px;
+}
+a:hover{
+	background-color:black;
+	color:white;
+	text-decoration:underline;
+	padding:10px;
+	border-radius:5px;
+}
+#backlink{
+	width:100%;
+	float: right;
+	padding: 10px;
+}
+#body{
+	width:100%;
+	float;
+}
+#header{
+	width: 40%;
+	float: right;
+}

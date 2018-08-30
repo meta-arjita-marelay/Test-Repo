@@ -2,10 +2,13 @@ package com.servlets;
 
 import java.io.IOException;
 
+
 import java.io.PrintWriter;
+import java.sql.SQLException;
+
 import com.database.*;
+
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,8 +30,18 @@ public class AddEmployeeServlet extends HttpServlet {
 		employee.setLname(lname);
 		employee.setEmail(email);
 		employee.setAge(age);
-		QueryService.insertEmployee(employee);
-		out.println("Added successfully");
+		try {
+			QueryService.insertEmployee(employee);
+			out.println("Added successfully");
+			
+			
+		} catch (SQLException e) {
+			out.println(e);
+		}
+		out.println("<!DOCTYPE html><html><head><link href='style.css' rel=stylesheet></head>"
+				+ "<body>");
+		out.println("<a href = 'http://localhost:8080/EAD-Assignment-3/' id='backlink'>Back</a> ");
+		out.println("</html></body>");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
