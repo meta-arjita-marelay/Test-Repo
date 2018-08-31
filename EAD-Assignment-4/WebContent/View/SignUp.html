@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration</title>
+<script src="../Scripts/script.js"></script>
+<link href="../Stylesheet/style.css" rel=stylesheet>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="navbar">
+			<table width="75%" align="center">
+				<tbody>
+					<tr>
+						<td width="30%"><img src="../Images/logo.png" height="40%"></td>
+						<td align="right"><a href="../Question1.html"> Home </a> <a href="Login.html">Login</a>
+							<a href="SignUp.html">New User?</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr />
+		<div id="form" align="center" padding=5px>
+			<form action="Login.html" id="form" method="post">
+				<h1>Registration</h1>
+				<table cellpadding="5%">
+					<tr>
+						<th align="left">First Name</th>
+						<td><input type='text' name='fname' id='fname'
+							onfocusout="fnamefocusout()" placeholder="Enter your first name"
+							title="First name length should be greater than 2" /></td>
+						<td><span id="fnamespan" width=20px> </span></td>
+					</tr>
+					<tr>
+						<th align="left">Last Name</th>
+						<td><input type='text' name='lname' id='lname'
+							onfocusout="lnamefocusout()" placeholder="Enter your last name"
+							title="Last name length should be greater than 2" /></td>
+						<td><span id="lnamespan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Date Of Birth</th>
+						<td><input type='date' name='dob' id='dob'
+							onfocusout="dobfocusout()" placeholder="Select your dob"
+							title="Select your date of birth" /></td>
+						<td><span id="dobspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Email</th>
+						<td><input type='text' name='email' id='email'
+							onfocusout="emailfocusout()" placeholder="Enter your email"
+							title="Email should contains @ ., and length before and after @, . should be greater than 2" /></td>
+						<td><span id="emailspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Password</th>
+						<td><input type='password' name='pwd' id='pwd'
+							onfocusout="passwordfocusout()" placeholder="Enter your password"
+							title="Password should contains Uppercase, Lowercase, Numeric, Alphanumeric, and length minimum 8" /></td>
+						<td><span id="pwdspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Confirm Password</th>
+						<td><input type='password' name='cpwd' id='cpwd'
+							onfocusout="cpasswordfocusout()" placeholder="Confirm password"
+							title="Password should be same in both fields" /></td>
+						<td><span id="cpwdspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Contact Number</th>
+						<td><input type='text' name='cnumber' id='cnumber'
+							onfocusout="contactnofocusout()"
+							placeholder="Enter your contact number"
+							title="Numbers only, length > 8" /></td>
+						<td><span id="cnumspan" width=20px></span></td>
+					</tr>
+					<tr>
+						<th align="left">Organization Name</th>
+						<td><select name='orgname' id='orgname'>
+								<option value="" selected disabled hidden>Choose here</option>
+								<option value="metacube">Metacube</option>
+								<option value="tcs">TCS</option>
+								<option value="accenture">Accenture</option>
+								<option value="ibm">IBM</option>
+								<option value="wipro">Wipro</option>
+						</select></td>
+					</tr>
+
+				</table>
+				<table cellpadding="10%">
+					<tr>
+						<td><button onclick="return checkValidation()">Submit</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>

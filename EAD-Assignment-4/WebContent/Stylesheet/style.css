@@ -1,0 +1,54 @@
+@CHARSET "ISO-8859-1";
+a , a:active , a:visited{
+	padding: 10px;
+	background-color: white;
+	color: black;
+	border-radius:10px;
+	text-decoration: none;
+}
+input , select, button{
+	width: 100%;
+   	padding: 5px;
+   	box-sizing: border-box;
+   	border-radius: 5px;
+   	font-family: inherit;
+	font-size:100%;
+	box-shadow: 2px 1px #888888;
+}
+button{
+	cursor: pointer;
+}
+a:hover{
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border-radius:10px;
+}
+#navbar{
+	background-color: white;
+}
+#forgotpassword{
+	padding: 5px;
+	background-color: white;
+	color: black;
+}
+#forgotpassword:hover{
+	text-decoration : underline;
+}
+hr{
+	 width : 100%;
+}
+form{
+	border:solid black;
+	border-radius: 10px;
+	width : 30%;
+	align: center;
+}
+body{
+	float: center;
+}
+table{
+	width : 75%;
+	cellpadding : 10%;
+	align: center;
+}
