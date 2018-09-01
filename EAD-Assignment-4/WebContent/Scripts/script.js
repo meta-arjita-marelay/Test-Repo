@@ -1,7 +1,6 @@
 function checkValidation() {
 	if (isFNameValid() && isLNameValid() && isEmailValid() && isPasswordValid()
 			&& isConfirmPasswordValid() && isContactNumberValid() && isOrganizatioNameValid() && isDobValid()) {
-		document.getElementById("form").submit();
 		return true;
 	} else {
 		alert("Enter valid inputs.")

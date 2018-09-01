@@ -13,15 +13,16 @@
 				<tbody>
 					<tr>
 						<td width="30%"><img src="../Images/logo.png" height="40%"></td>
-						<td align="right"><a href="../Question1.html"> Home </a> <a href="Login.html">Login</a>
-							<a href="SignUp.html">New User?</a></td>
+						<td align="right"><a href="../Question1.html"> Home </a> <a
+							href="Login.html">Login</a> <a href="SignUp.html">New User?</a></td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 		<hr />
 		<div id="form" align="center" padding=5px>
-			<form action="Login.html" id="form" method="post">
+			<form action="SignUp"
+				onsubmit="return checkValidation()" id="form" method="post">
 				<h1>Registration</h1>
 				<table cellpadding="5%">
 					<tr>
@@ -89,7 +90,7 @@
 				</table>
 				<table cellpadding="10%">
 					<tr>
-						<td><button onclick="return checkValidation()">Submit</button></td>
+						<td><input type="submit" value="Submit" ></td>
 					</tr>
 				</table>
 			</form>
