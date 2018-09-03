@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.4">
+  <display-name>hellowworldservlet</display-name>
+  <servlet>
+    <display-name>SignUp</display-name>
+    <servlet-name>SignUp</servlet-name>
+    <servlet-class>com.Controller.SignUp</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SignUp</servlet-name>
+    <url-pattern>/View/SignUp</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Login</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.Controller.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/View/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Profile</display-name>
+    <servlet-name>Profile</servlet-name>
+    <servlet-class>com.Controller.Profile</servlet-class>
+  </servlet>
+  <filter>
+    <filter-name>LoginValid</filter-name>
+    <filter-class>com.filters.IsLoginValid</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>LoginValid</filter-name>
+    <url-pattern>/View/Profile</url-pattern>
+  </filter-mapping>
+  <servlet-mapping>
+    <servlet-name>Profile</servlet-name>
+    <url-pattern>/View/Profile</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>/Question1.html</welcome-file>
+  </welcome-file-list>
+</web-app>
