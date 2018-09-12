@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form th:object="${skills}" th:action="@{addSkills}" method="post">
+		<table width="50%">
+			<input type="hidden" th:field="*{skillId}" />
+			<tr>
+				<td>
+					<h1>Add Skills</h1>
+				</td>
+			</tr>
+			<tr>
+				<td>Skill Name</td>
+				<td><input type="text" th:field="*{skillName}" required></td>
+			</tr>
+			<tr colspan="2">
+				<td><input type="submit" value="submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
