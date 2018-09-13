@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- <div th:switch="${role}">  -->
+<!-- <form th:case="'1'" th:action="@{searchEmployee}" method="post"> -->
+<!-- <form th:case="'2'" th:action="@{../employee/searchEmployee}" method="post"> -->
+<!-- </div> -->
+	<form th:action="@{'searchEmployee?role='}+${role}" method="post">
+		<table>
+			<tr>
+				<td>
+					<h1>Search Employee</h1>
+				</td>
+			</tr>
+			<tr>
+				<td>Search by</td>
+				<td><select name="searchBy">
+						<option th:value="default" th:text="Select">Select</option>
+						<option th:value="name" th:text="Name">Name</option>
+						<option th:value="project" th:text="Project">Project</option>
+						<option th:value="skills" th:text="Skills">Skills</option>
+						<option th:value="experience" th:text="Total_Experience">Total Experience</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Name:</td>
+				<td><input type="text" name="attribute"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Search" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
