@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<title>projects</title>
+
+</head>
+<body>
+	<div class="container">
+		<!-- th:if="${not #lists.isEmpty(projects)}" -->
+		<div>
+		<a th:href="@{dashboard}">Dashboard</a>
+		</div>
+		<div>
+			<h2>List of Employees</h2>
+			<table class="table table-striped">
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Date of Birth</th>
+					<th>Gender</th>
+					<th>Email</th>
+					<th>Contact</th>
+					<th>Skype Id</th>
+					<th>Edit</th>
+					<th>Delete</th>
+
+				</tr>
+				<tr th:each="employee : ${employees}">
+					<td th:text="${employee.code}">Id</td>
+					<td th:text="${employee.firstName + ' ' + employee.middleName + ' ' + employee.lastName}">Name</td>
+					<td th:text="${employee.dob}">Date of Birth</td> 
+					<td th:text="${employee.gender}">Gender</td>
+					<td th:text="${employee.emailId}">Email</td>
+					<td th:text="${employee.contact}">Contact</td>
+					<td th:text="${employee.skypeId}">Skype Id</td>
+
+					<td><a th:href="${'showEmployee/edit?id=' + employee.code}"
+						class="btn btn-default">Edit</a></td>
+					<td><a th:href="${'showEmployee/delete?id=' + employee.code}"
+						class="btn btn-danger">Delete</a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
