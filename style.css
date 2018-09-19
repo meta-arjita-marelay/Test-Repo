@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+}
+#firstpart{
+    background-image: url("Images/homebg.png")
+}
+#header{
+    display: inline-block;
+    padding: 2%;
+    margin: 0% 20% ;
+}
+#headerlogo{
+    float:left;
+    display: inline-block;
+    width: 30%;
+}
+#headerlink{
+    display: inline-block;
+    width: 30%;
+}
+#socialsiteicon{
+    float: right;
+    display: inline-block;
+    width: 30%;
+}
+#socialsiteicon img{
+    padding: 2%;
+    width: 10%;
+    height: 10%;
+}
