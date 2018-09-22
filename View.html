@@ -8,26 +8,26 @@
         <div id="wrapper">
             <div id="firstpart">
                 <div id="header">
-                    <div id="headerlogo">
+                    <div class="headerItems" id="headerlogo">
                         <img src="Images/logo.png" alt="Logo">
                     </div>
-                    <div id="headerlink">
+                    <div class="headerItems" id="headerlink">
                         <a href="#">Home</a>
                         <a href="#">Features</a>
                         <a href="#">Reviews</a>
                         <a href="#">Download</a>
                     </div>
-                    <div id="socialsiteicon">
+                    <div class="headerItems" id="socialsiteicon">
                         <img src="Images/facebook.png" alt="facebookicon">
                         <img src="Images/instagram.png" alt="instagramicon">
                         <img src="Images/googlePlus.png" alt="googleplusicon">
                     </div>
                 </div>
                 <div id="cover">
-                    <div id="coverlink">
+                    <div id="coverdetails">
                         <p>Get the most fun weather app</p>
-                        <a href="#">Download</a>
-                        <a href="#">Features</a>
+                        <a  class="coverlink" id="downloadlink" href="#">Download</a>
+                        <a class="coverlink" id="featureslink" href="#">Features</a>
                     </div>
                     <div id="coverimage">
                         <img src="Images/phone1.png" alt="phoneimage" width="30%" height="50%">
@@ -41,55 +41,70 @@
                         <p>Only necessary</p>
                     </div>
                     <div id="featuredetail">
-                        <div id="featuredetailleft">
+                        <div class="featuredetailcontainer" id="featuredetailleft">
                             <img src="Images/feature1.PNG" alt="features">
-                            <h2>Usability</h2>
-                            <p>Sometimes the simplest things are hardest to find. So we created new line for everyday life.</p>
+                            <div class="featurecontent">
+                                <h2>Usability</h2>
+                                <p>Sometimes the simplest things are hardest to find. So we created new line for everyday life.</p>
+                            </div>
                         </div>
-                        <div id="featuredetailcenter">
-                            <img src="Images/feature2.PNG" alt="features">
-                            <h2>Usability</h2>
-                            <p>Sometimes the simplest things are hardest to find. So we created new line for everyday life.</p>
+                        <div class="featuredetailcontainer" id="featuredetailcenter">
+                           <img src="Images/feature2.PNG" alt="features">
+                           <div class="featurecontent">
+                                <h2>Usability</h2>
+                                <p>Sometimes the simplest things are hardest to find. So we created new line for everyday life.</p>
+                            </div>
                         </div>
-                        <div id="featuredetailright">
+                        <div class="featuredetailcontainer" id="featuredetailright">
                             <img src="Images/feature3.PNG" alt="features">
-                            <h2>Usability</h2>
-                            <p>Sometimes the simplest things are hardest to find. So we created new line for everyday life.</p>
+                            <div class="featurecontent">
+                                <h2>Usability</h2>
+                                <p>Sometimes the simplest things are hardest to find. So we created new line for everyday life.</p>
+                            </div>
                         </div>
                     </div>
                     <div id="featuresimage">
                         <img src="Images/test1.png">
                     </div>
                 </div>
-                <div id="screenshots">
+                <div id="screenshotcontainer">
                     <div id="screenshotheader">
                         <h1>ScreenShots</h1>
                         <p>The brightest images</p>
                     </div>
-                    <div class="screenshot">
-                        <div id="screenshotimage">
+                    <div class="screenshots">
+                        <div class="screenshotimage">
                             <img src="Images/screen01.png" alt="screenshot1">
                         </div>
-                        <div id="screenshotdetail">
-                            <img src="Images/cloud1.png">
+                        <div class="screenshotdetail">
+                            <div class="screenshotlogo">
+                                <img src="Images/cloud1.png">   
+                            </div>
+                            <h2>When the clouds</h2>
                             <p>Variable info on air humidity</p>
                         </div>
                     </div>
-                    <div class="screenshot">
-                        <div id="screenshotimage">
+                    <div class="screenshots">
+                        <div class="screenshotdetail">
+                            <div class="screenshotlogo">
+                                <img src="Images/sun1.png">
+                            </div>
+                            <h2>When the clouds</h2>
+                            <p>Variable info on air humidity</p>
+                        </div>
+                        <div class="screenshotimage">
                             <img src="Images/screen02.png" alt="screenshot1">
                         </div>
-                        <div id="screenshotdetail">
-                            <img src="Images/sun1.png">
-                            <p>Variable info on air humidity</p>
-                        </div>
                     </div>
-                    <div class="screenshot">
-                        <div id="screenshotimage">
+                    <div class="screenshots">
+                        <div class="screenshotimage">
                             <img src="Images/screen03.png" alt="screenshot1">
                         </div>
-                        <div id="screenshotdetail">
-                            <img src="Images/rainy1.png">
+                        <div class="screenshotdetail">
+                            <div class="screenshotlogo">
+                               <img src="Images/rainy1.png"> 
+                            </div>
+                            <h2>When the clouds</h2>
                             <p>Variable info on air humidity</p>
                         </div>
                     </div>
@@ -99,50 +114,62 @@
                         <h1>What reviews are saying?</h1>
                         <p>Reviews</p>
                     </div>
-                    <div class="reviewleft">
-                        <p>Reviews</p>
-                        <p class="reviewby">reviews by</p>
+                    <div class="reviewdetailcontainer">
+                        <div class="alignleft">
+                            <p class="reviewtext">Reviews</p>
+                            <p class="reviewby">reviews by</p>
+                        </div>
+                        <div class="alignright">
+                            <p class="reviewtext">Reviews</p>
+                            <p class="reviewby">reviews by</p>  
+                        </div>
                     </div>
-                    <div class="reviewright">
-                        <p>Reviews</p>
-                        <p class="reviewby">reviews by</p>
-                    </div>
-                    <div class="reviewleft">
-                        <p>Reviews</p>
-                        <p class="reviewby">reviews by</p>
-                    </div>
-                    <div class="reviewright">
-                        <p>Reviews</p>
-                        <p class="reviewby">reviews by</p>
+                    <div class="reviewdetailcontainer">
+                        <div class="alignleft">
+                            <p class="reviewtext">Reviews</p>
+                            <p class="reviewby">reviews by</p>
+                        </div>
+                        <div class="alignright">
+                            <p class="reviewtext">Reviews</p>
+                            <p class="reviewby">reviews by</p>  
+                        </div>
                     </div>
                 </div>
-                <div id="downloadapp">
-                    <div id="downloadleft">
-                        <h1>How to download the app?</h1>
-                        <p>Just download the app</p>
-                        <img src="Images/appstor.png" alt="appstore">
-                        <img src="Images/googleplay.png" alt="appstore">
-                    </div>
-                    <div id="downloadright">
-                        <img src="Images/appdownload1.png">
+                <div id="downloadappcontainer">
+                    <div id="downloadapp">
+                        <div id="downloadleft">
+                            <h1>How to download the app?</h1>
+                            <p>Just download the app</p>
+                            <img src="Images/appstor.png" alt="appstore">
+                            <img src="Images/googleplay.png" alt="appstore">
+                        </div>
+                        <div id="downloadright">
+                            <img src="Images/appdownload1.png">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="footer">
-                <div id="footerlogo"><img src="Images/footer-logo.png" alt="Logo"></div>
-                <div id="footerlink">
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Download</a>
+            <div id="footercontainer">
+                <div id="footer">
+                    <div class="footeritems" id="footerlogo">
+                        <img src="Images/footer-logo.png" alt="Logo">
+                    </div>
+                    <div class="footeritems" id="footerlink">
+                        <a href="#">Home</a>
+                        <a href="#">Features</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">Download</a>
+                    </div>
+                    <div class="footeritems" id="socialsiteicon">
+                        <img src="Images/facebook.png" alt="facebookicon" width="1%" height="1%">
+                        <img src="Images/instagram.png" alt="instagramicon" width="1%" height="1%">
+                        <img src="Images/googlePlus.png" alt="googleplusicon" width="1%" height="1%">
+                    </div>
                 </div>
-                <div id="socialsiteicon">
-                    <img src="Images/facebook.png" alt="facebookicon" width="1%" height="1%">
-                    <img src="Images/instagram.png" alt="instagramicon" width="1%" height="1%">
-                    <img src="Images/googlePlus.png" alt="googleplusicon" width="1%" height="1%">
+                <div id="footercopyright">
+                    <hr/>
+                    <p>All Rights Reserved</p>
                 </div>
-                <hr/>
-                <p>All Rights Reserved</p>
             </div>
         </div>
     </BODY>

@@ -2,29 +2,307 @@
     margin: 0px;
 }
 #firstpart{
-    background-image: url("Images/homebg.png")
+    background-image: url("Images/homebg.png");
+    background-size: 100% 100%;
 }
 #header{
-    display: inline-block;
+    display: flex;
     padding: 2%;
-    margin: 0% 20% ;
+    margin: 0% 10%;
 }
-#headerlogo{
-    float:left;
-    display: inline-block;
+.headerItems{
+	float:left;
     width: 30%;
+    margin: 2%;
 }
 #headerlink{
-    display: inline-block;
-    width: 30%;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+}
+#headerlink > a{
+	color: white;
+	text-decoration: none;
+	font: bold 15px cursive;
 }
 #socialsiteicon{
-    float: right;
-    display: inline-block;
-    width: 30%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: flex-end; 
 }
 #socialsiteicon img{
     padding: 2%;
     width: 10%;
     height: 10%;
+}
+#cover{
+	display: flex;
+    padding: 2%;
+    margin: 0% 10%;
+}
+#coverdetails{
+	float:left;
+    width: 50%;
+    margin: 2%;
+    color: white;
+}
+#coverdetails > p{
+	padding: 3%;
+	font: bold 50px cursive;
+}
+.coverlink{
+	margin: 3%;
+	color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 3px;
+    font: bold 15px cursive;
+}
+#downloadlink{
+	background-color: rgba(252, 106, 69);
+}
+#featureslink{
+	background-color: rgba(69, 99, 197);
+}
+#coverimage{
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+    margin: 2%;
+}
+#coverimage > img{
+	width: 90%;
+	height: 90%;
+}
+#secondpart{
+    background-image: url("Images/bodybg.png");
+    background-size: 100% 100%;
+}
+#features{
+	display: flex;
+	padding: 2%;
+    margin: 0% 10%;
+    flex-wrap: wrap;
+}
+#featureheader{
+	flex-wrap: wrap; 
+	width: 100%;
+	text-align: center;
+	padding: 3%;
+}
+#featureheader > h1{
+	font: bold 35px cursive;
+	color: rgba(114, 139, 251);
+}
+#featureheader > p{
+	color: rgba(195, 200, 203);
+	font: 20px cursive;
+}
+#featuredetail{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 3%;
+}
+.featuredetailcontainer{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.featuredetailcontainer > img{
+	display: flex;
+	flex-wrap: start;
+	padding: 2%;
+	width: 25%;
+	height: 50%;
+}
+.featurecontent > h2{
+	font: bold 25px cursive;
+	color: black;
+}
+.featurecontent > p{
+	font: 15px cursive;
+	color: rgba(196, 202, 209);
+}
+#featuresimage{
+	padding: 3%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	width: 100%;
+}
+#featuresimage > img{
+	width: 80%;
+	height: 100%;
+}
+#screenshotcontainer{
+	display: flex;
+	padding: 2%;
+    margin: 0% 10%;
+    flex-wrap: wrap;
+}
+#screenshotheader{
+	flex-wrap: wrap; 
+	width: 100%;
+	text-align: center;
+	padding: 3%;
+}
+#screenshotheader > h1{
+	font: bold 35px cursive;
+	color: rgba(114, 139, 251);
+}
+#screenshotheader > p{
+	color: rgba(195, 200, 203);
+	font: 15px cursive;
+}
+.screenshots{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0% 5% 0% 2%; 
+}
+.screenshotimage{
+	width: 35%;
+	padding: 2%;
+	margin: 0% 5% 0% 0%;
+}
+.screenshotdetail{
+	width: 55%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.screenshotlogo{
+	width: 100%;
+	height: 25%;
+	padding: 25% 0%;
+	box-sizing: border-box;
+}
+.screenshotdetail > img{
+	width: 40%;
+}
+.screenshotdetail > h2{
+	width: 100%;
+	font: bold 25px cursive;
+	color: black;
+}
+.screenshotdetail > p{
+	width: 100%;
+	font: 15px cursive;
+	color: rgba(196, 202, 209);
+}
+#reviews{
+	display: flex;
+	padding: 2%;
+    margin: 0% 10%;
+    flex-wrap: wrap;
+}
+#reviewheader{
+	flex-wrap: wrap; 
+	width: 100%;
+	text-align: center;
+	padding: 3%;
+}
+#reviewheader > h1{
+	font: bold 35px cursive;
+	color: rgba(114, 139, 251);
+}
+#reviewheader > p{
+	color: rgba(195, 200, 203);
+	font: 20px cursive;
+}
+.reviewdetailcontainer{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.alignleft{
+	width: 50%;
+	float: left;
+}
+.alignright{
+	width: 50%;
+	float: right;
+}
+.reviewtext{
+	width: 100%;
+	font: bold 15px cursive;
+	color: black;
+}
+.reviewby{
+	width: 100%;
+	font: bold 10px cursive;
+	color: black;
+}
+#downloadappcontainer{
+	background-color: rgba(99, 136, 251, 0.75);
+}
+#downloadapp{
+	display: flex;
+    padding: 2% 2% 0% 2%;
+    margin: 0% 10%;
+}
+#downloadleft{
+	float:left;
+    width: 50%;
+    margin: 2%;
+    color: white;
+}
+#downloadleft > h1{
+	padding: 2%;
+	font: bold 30px cursive;
+}
+#downloadleft > p{
+	padding: 2%;
+	font: bold 20px cursive;
+}
+#downloadleft > img{
+	width: 30%;
+	height: 20%;
+	margin: 2%;
+}
+#downloadright{
+	display: flex;
+	justify-content: flex-end;
+	width: 50%;
+    margin: 2% 2% 0% 2%;
+}
+#downloadright > img{
+	width: 90%;
+	height: 100%;
+}
+#footercontainer{
+	background-color: rgba(56, 58, 83);
+}
+#footer{
+	display: flex;
+    padding: 2%;
+    margin: 0% 10%;
+}
+.footeritems{
+	float:left;
+    width: 30%;
+    margin: 2%;
+}
+#footerlink{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-between;
+}
+#footerlink > a{
+	color: rgba(159, 152, 169);
+	text-decoration: none;
+	font: bold 15px cursive;
+}
+hr{
+	border-style: solid;
+	border-color: rgba(159, 152, 169);
+}
+#footercopyright > p{
+	color: rgba(159, 152, 169);
+	text-align: center;
+	padding: 3%;
 }
